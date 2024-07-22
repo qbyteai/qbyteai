@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qbyte Blogs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background-color: orangered;
+            color: white;
+            padding: 1em;
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 0 20px;
+        }
+        
+        .blog-preview, .blog-content {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+           
+        }
+        
+        .blog-preview img, .blog-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        .blog-preview:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            cursor: pointer;
+        }
+        
+        .blog-content {
+            display: none;
+        }
+        
+        .blog-content.active {
+            display: block;
+        }
+        
+        .blog-content h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Qbyte Blogs</h1>
+    </header>
+    <main>
+        <div class="blog-preview" onclick="showBlog('blog1')">
+            <h2>Blog Title 1</h2>
+            <img src="image1.jpg" alt="Blog Image 1">
+            <p>First two lines of the blog content...</p>
+        </div>
+
+        <div class="blog-preview" onclick="showBlog('blog2')">
+            <h2>Blog Title 2</h2>
+            <img src="image2.jpg" alt="Blog Image 2">
+            <p>First two lines of the blog content...</p>
+        </div>
+    </main>
+
+</body>
+</html>
